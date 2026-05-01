@@ -1,0 +1,36 @@
+[project]
+name = "pgr-manager"
+version = "0.1"
+description = "战双帕弥什命令行管理器"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "typer",
+    "certifi",
+    "rich",
+    "typing-extensions>=4.15.0",
+]
+
+[project.scripts]
+pgr = "pgr_manager.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+sources = { "pgr_manager" = "src/pgr_manager" }
+
+[tool.ruff]
+line-length = 120
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["F", "E", "W", "I"]
+ignore = []
+
+[tool.ruff.format]
+quote-style = "double"
+
+[dependency-groups]
+dev = ["pre-commit>=4.3.0"]
