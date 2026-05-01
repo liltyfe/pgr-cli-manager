@@ -7,6 +7,8 @@
 玩战双的时候，发现官方的下载器没有办法渲染，导致资源没有办法下载，在搜索解决方案的时候，无意之间发现了
 `ww-manager` 这个项目，于是仿照鸣潮的cli启动器写了一个站双的。
 
+演示视频：[如何在Arch Linux上玩战双帕弥什](https://www.bilibili.com/video/BV1YeRTByEsH/?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=958633e12684eb6031a43772ebfbd213)
+
 > 当前处于早期开发阶段，只适配国服 `cn`。B 服、国际服、快速切服、预下载和抽卡链接分析暂未实现。
 
 ## 功能
