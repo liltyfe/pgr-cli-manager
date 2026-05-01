@@ -91,23 +91,6 @@ pgr sync
 - 未实现抽卡记录链接提取。
 - 资源入口 URL 目前写在 `src/pgr_manager/config.py`，如果官方启动器配置路径变化，需要更新该文件。
 
-## 开发验证
-
-建议提交前至少运行：
-
-```bash
-uv run pgr --help
-uv run pgr --version
-python -m py_compile src/pgr_manager/config.py src/pgr_manager/core.py src/pgr_manager/cli.py
-```
-
-如果安装了 Ruff：
-
-```bash
-uv run ruff check .
-uv run ruff format --check .
-```
-
 ## 致谢
 
 本项目基于 `ww-manager` 的实现思路改造，复用了其 CLI、资源清单解析、文件校验和并发下载结构。
